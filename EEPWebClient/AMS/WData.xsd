@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:CaseSensitive="true" msdata:Locale="zh-TW">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AMSMG">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MG001" type="xs:string" />
+              <xs:element name="MG002" type="xs:string" />
+              <xs:element name="MG003" type="xs:string" minOccurs="0" />
+              <xs:element name="MG004" type="xs:string" minOccurs="0" />
+              <xs:element name="MG005" type="xs:string" minOccurs="0" />
+              <xs:element name="MG006" type="xs:string" minOccurs="0" />
+              <xs:element name="MG007" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//AMSMG" />
+      <xs:field xpath="MG001" />
+      <xs:field xpath="MG002" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
